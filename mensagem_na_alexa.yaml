@@ -60,3 +60,4 @@ sequence:
     target:
       entity_id: "{{ onde_anunciar }}"
 icon: mdi:bullhorn
+
