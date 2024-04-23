@@ -1,13 +1,13 @@
 blueprint:
-  name: Comunicar via alexa
-  description: Anuncia em todas as Alexas
+  name: Comunicar via Alexa
+  description: Anuncia em quantas Alexas quiser
   domain: script
 mode: queued
 fields:
   mensagem:
     selector:
       text: null
-    name: Mensagem
+    name: Sua mensagem
     description: Escreva o que a Alexa vai falar
     required: true
   onde_anunciar:
@@ -29,7 +29,7 @@ fields:
         step: 0.1
     default: 10
     name: Volume
-    description: Deslize a barra do volume que deseja
+    description: Deslize a barra pra ajustar o volume da fala
 sequence:
   - service: media_player.volume_set
     metadata: {}
