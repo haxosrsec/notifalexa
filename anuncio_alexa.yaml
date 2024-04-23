@@ -7,8 +7,8 @@ fields:
   mensagem:
     selector:
       text: null
-    name: Mensagem
-    description: O que anunciar?
+    name: Mensagem a ser reproduzida
+    description: Ela vai falar o que vocÊ digita
     required: true
   onde_anunciar:
     selector:
@@ -20,16 +20,16 @@ fields:
     name: Onde Anunciar
     required: true
     default: []
-    description: Escolha as Alexas
+    description: Escolha suas Alexas
   volume:
     selector:
       number:
         min: 0.1
         max: 1
         step: 0.1
-    default: 0.9
+    default: 10
     name: Volume
-    description: Escolha o volume do anúncio (padrão 90%)
+    description: Deslize a barra para ajustar o volume do anúncio
 sequence:
   - service: media_player.volume_set
     metadata: {}
