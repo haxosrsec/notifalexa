@@ -1,6 +1,6 @@
 blueprint:
   name: Anunciar via Alexa
-  description: Anuncia em todas as caixas Echo selecionadas
+  description: Anuncia em todas as caixas 
   domain: script
 mode: queued
 fields:
